@@ -6,7 +6,7 @@
 #include <conio.h>
 #include <math.h>
 
-int Input_Arr(int N, int *a);
+void Input_Arr(int N, int *a);
 void Out_Arr(int N, int *a);
 int Sum_abs_Arr(int N, int *a);
 
@@ -30,7 +30,7 @@ void main(void)
 }
 
 //Функція - ініціалізації масива розміром N з клавіатури.
-int Input_Arr (int N, int *a)
+void Input_Arr (int N, int *a)
 {
 	printf("\n Введiть значення елементiв масиву A: \n");
 	for (int i = 0; i < N; i++)
@@ -38,7 +38,6 @@ int Input_Arr (int N, int *a)
 		printf("\t а[%d]=", i + 1); scanf("%d", &a[i]);
 	}
 	system("cls");
-	return a;
 }
 
 //Функція виведення одномірного масиву на екран розміром N
